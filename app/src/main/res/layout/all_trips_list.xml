@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imgTripListPicture" />
+
+    <TextView
+        android:text="Trip Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgTripListPicture"
+        android:layout_toEndOf="@+id/imgTripListPicture"
+        android:id="@+id/txtListTripName" />
+
+    <TextView
+        android:text="Created By: X"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtListTripName"
+        android:layout_toRightOf="@+id/imgTripListPicture"
+        android:layout_toEndOf="@+id/imgTripListPicture"
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtListCreatedByName" />
+
+    <Button
+        android:text="Join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnListJoinTrip"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txtListCreatedByName"
+        android:layout_toRightOf="@+id/imgTripListPicture"
+        android:layout_toEndOf="@+id/imgTripListPicture" />
+</RelativeLayout>

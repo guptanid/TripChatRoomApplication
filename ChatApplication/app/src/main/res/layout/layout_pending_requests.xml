@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/dialog_holo_dark_frame"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imgPendingRequest" />
+
+    <TextView
+        android:text="FirstName+LastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgPendingRequest"
+        android:layout_toEndOf="@+id/imgPendingRequest"
+        android:id="@+id/txtPendingName"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_delete"
+        android:layout_alignBottom="@+id/btnAddPendingFriend"
+        android:layout_toRightOf="@+id/btnAddPendingFriend"
+        android:layout_toEndOf="@+id/btnAddPendingFriend"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:id="@+id/btnRemovePendingFriend" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:id="@+id/btnAddPendingFriend"
+        android:layout_below="@+id/txtPendingName"
+        android:layout_toRightOf="@+id/imgPendingRequest"
+        android:layout_toEndOf="@+id/imgPendingRequest"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+</RelativeLayout>

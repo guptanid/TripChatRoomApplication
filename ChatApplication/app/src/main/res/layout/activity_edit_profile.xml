@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.uncc.chatapplication.EditProfileActivity">
+    <TextView
+        android:id="@+id/txtUpdateNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Update Profile Details"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/txtUpdateFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUpdateNewUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="First Name" />
+
+    <EditText
+        android:id="@+id/txtUpdateLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtUpdateFirstName"
+        android:layout_alignStart="@+id/txtUpdateFirstName"
+        android:layout_below="@+id/txtUpdateFirstName"
+        android:hint="Last Name"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/lblUpdateGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUpdateLastName"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/txtUpdateNewUser"
+        android:layout_toStartOf="@+id/txtUpdateNewUser"
+        android:text="Gender"
+        android:textStyle="normal|bold" />
+
+    <RadioGroup
+        android:id="@+id/rgUpdateGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtUpdateLastName"
+        android:layout_alignStart="@+id/txtUpdateLastName"
+        android:layout_below="@+id/txtUpdateLastName"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbUpdateMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rbUpdateFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female" />
+    </RadioGroup>
+    <ImageView
+        android:id="@+id/imgUpdateProfileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/add_photos_icon"
+        android:layout_below="@+id/lblUpdateGender"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnUpdateProfileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgUpdateProfileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="upload image"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:text="Save Changes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdateProfileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:id="@+id/btnUpdateProfile"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+</RelativeLayout>

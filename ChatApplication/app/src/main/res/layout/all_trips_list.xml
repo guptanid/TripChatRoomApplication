@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imgTripListPicture"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:text="Trip Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgTripListPicture"
+        android:layout_toEndOf="@+id/imgTripListPicture"
+        android:id="@+id/txtListTripName"
+        android:textSize="18sp"
+        android:textColor="?android:attr/colorActivatedHighlight"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="Created By: X"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtListTripName"
+        android:layout_toRightOf="@+id/imgTripListPicture"
+        android:layout_toEndOf="@+id/imgTripListPicture"
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtListCreatedByName"
+        android:textSize="18sp"
+        android:textColor="?android:attr/colorActivatedHighlight"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnListJoinTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Join"
+        android:textColor="?android:attr/colorActivatedHighlight"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+</RelativeLayout>

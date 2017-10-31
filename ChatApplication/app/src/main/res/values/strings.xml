@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Trip Application</string>
+    <!--<string name="ClientId">170442688578-rr7s4i66i0g3o8fte18utkmq3b65p950.apps.googleusercontent.com</string>-->
+    <string name="ClientId">238431631763-1uk84emthmpvqvlrcbumhiopvuig9p90.apps.googleusercontent.com</string>
+    <string name="new_trip_label">New Trip</string>
+    <string name="trip_name">Trip name</string>
+    <string name="trip_location">Trip Location</string>
+    <string name="create_label">Create</string>
+    <string name="close_label">Close</string>
+    <string name="show_members_label">Show Members</string>
+    <string name="chat_icon_label">Chat Icon</string>
+    <string name="add_places_label">Add Places</string>
+    <string name="places_label">Places</string>
+    <string name="display_trip_label">Display Trip</string>
+    <string name="title_activity_maps">Map</string>
+    <!--<string name="storage_ref_url">gs://chatroom-5e19a.appspot.com</string>-->
+    <string name="storage_ref_url">gs://tripapplication-6cab7.appspot.com </string>
+    <!--<string name="default_web_client_id">238431631763-s2ptqd0nmj5e8skn0l3508dun1j7u8vp.apps.googleusercontent.com</string>-->
+</resources>

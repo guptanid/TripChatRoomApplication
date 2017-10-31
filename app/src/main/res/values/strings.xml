@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Trip Application</string>
+    <string name="ClientId">238431631763-1uk84emthmpvqvlrcbumhiopvuig9p90.apps.googleusercontent.com</string>
+	<string name="new_trip_label">New Trip</string>
+    <string name="trip_name">Trip name</string>
+    <string name="trip_location">Trip Location</string>
+    <string name="create_label">Create</string>
+    <string name="close_label">Close</string>
+    <string name="add_members_label">Add Members</string>
+    <string name="chat_icon_label">Chat Icon</string>
+    <!--<string name="default_web_client_id">238431631763-s2ptqd0nmj5e8skn0l3508dun1j7u8vp.apps.googleusercontent.com</string>-->
+</resources>

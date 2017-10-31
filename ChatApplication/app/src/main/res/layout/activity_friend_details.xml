@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_friend_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.uncc.chatapplication.FriendDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imgFriendDetail"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
+
+    <TextView
+        android:id="@+id/txtFriendDetailsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/imgFriendDetail"
+        android:layout_toRightOf="@+id/imgFriendDetail"
+        android:text="First+Last_Name" />
+
+    <TextView
+        android:id="@+id/txtGenderFriendDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtFriendDetailsName"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtFriendDetailsName"
+        android:layout_marginTop="30dp"
+        android:text="Male" />
+
+    <TextView
+        android:id="@+id/lblTripsCreated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgFriendDetail"
+        android:layout_marginTop="37dp"
+        android:text="Trips Created/Joined"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewFriendAllTrips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblTripsCreated"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"></android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btnAddFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Add Friend"
+        android:layout_below="@+id/txtGenderFriendDetail"
+        android:layout_alignLeft="@+id/txtGenderFriendDetail"
+        android:layout_alignStart="@+id/txtGenderFriendDetail" />
+
+</RelativeLayout>

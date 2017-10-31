@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.uncc.chatapplication.CreateTripActivity">
+
+    <TextView
+        android:id="@+id/textViewNewTripcreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/new_trip_label"
+        android:textColor="?android:attr/colorActivatedHighlight"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonUploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Upload Image"
+        android:textColor="?android:attr/colorFocusedHighlight"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageViewTripimgCreate"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/editTextTripnameCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/trip_name"
+        android:inputType="textPersonName"
+        android:textColor="?android:attr/colorActivatedHighlight"
+        android:textColorHint="?android:attr/colorActivatedHighlight" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autocompleteTextLocationCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/trip_location"
+        android:textColor="?android:attr/colorActivatedHighlight"
+        android:textColorHint="?android:attr/colorActivatedHighlight" >
+    <requestFocus />
+    </AutoCompleteTextView>
+
+
+
+    <Button
+        android:id="@+id/buttonCreateTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_gravity="center|clip_vertical|clip_horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/create_label"
+        android:textColor="?android:attr/colorActivatedHighlight" />
+</LinearLayout>

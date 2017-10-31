@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_new_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.uncc.chatapplication.CreateNewUserActivity">
+
+
+        <EditText
+            android:id="@+id/txtFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNewUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:hint="First Name" />
+
+        <EditText
+            android:id="@+id/txtLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtFirstName"
+            android:layout_alignStart="@+id/txtFirstName"
+            android:layout_below="@+id/txtFirstName"
+            android:hint="Last Name" />
+
+        <TextView
+            android:id="@+id/lblGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLastName"
+            android:layout_marginTop="21dp"
+            android:layout_toLeftOf="@+id/txtNewUser"
+            android:layout_toStartOf="@+id/txtNewUser"
+            android:text="Gender"
+            android:textStyle="normal|bold" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtLastName"
+            android:layout_alignStart="@+id/txtLastName"
+            android:layout_below="@+id/txtLastName"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imgUploadProfileImage"
+            android:src="@drawable/common_google_signin_btn_icon_disabled"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignEnd="@+id/txtLastName"
+            android:layout_alignRight="@+id/txtLastName"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/btnUploadProfileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgUploadProfileImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:text="upload image"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:text="Create Profile"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/txtNewUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Update Profile Details"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+</RelativeLayout>
